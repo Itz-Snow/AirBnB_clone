@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 {"BaseModel.6f13c227-6448-42f3-b695-1c25c92d55ac": {"id": "6f13c227-6448-42f3-b695-1c25c92d55ac", "created_at": "2024-01-11T00:45:23.713041", "updated_at": "2024-01-11T00:45:23.713041", "name": "My_First_Model", "my_number": 89, "__class__": "BaseModel"}}
+=======
+{"BaseModel.a3516669-d977-4eca-bef9-9778a077c3b8": {"id": "a3516669-d977-4eca-bef9-9778a077c3b8", "created_at": "2024-01-10T23:42:19.771042", "updated_at": "2024-01-10T23:42:19.850332", "name": "My_First_Model", "my_number": 89, "__class__": "BaseModel"}}
+>>>>>>> f6e53aa955aa29fe10652edf4344dc9ee71460a7
