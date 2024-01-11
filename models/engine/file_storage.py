@@ -21,10 +21,10 @@ class FileStorage:
         serialized_objects = {}
         for key, value in self.__objects.items():
             serialized_objects[key] = value.to_dict()
-        
+
         with open(self.__file_path, 'w') as file:
             json.dump(serialized_objects, file)
-    
+
     def reload(self):
         """Deserializes the JSON file to __objects."""
         try:
@@ -36,8 +36,8 @@ class FileStorage:
                  del value['__class__']
                  obj = eval(class_name)(**value)
                  self.__objects[key] = obj
-                 
+
         except FileNotFoundError:
             pass
 
-    
+storage = FileStorage()  # Move this line outside the class definition
