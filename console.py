@@ -5,7 +5,7 @@ Console module for the command interpreter.
 import cmd
 from models.base_model import BaseModel
 from models import storage
-
+from models.user import User  # Import the User class
 
 class HBNBCommand(cmd.Cmd):
     prompt = "(hbnb) "
@@ -24,7 +24,7 @@ class HBNBCommand(cmd.Cmd):
         pass
 
     def do_create(self, arg):
-        """Creates a new instance of BaseModel and prints its id"""
+        """Creates a new instance of BaseModel or User and prints its id"""
         if not arg:
             print("** class name missing **")
             return
@@ -129,7 +129,6 @@ class HBNBCommand(cmd.Cmd):
 
         setattr(instance, attribute_name, attribute_value)
         instance.save()
-
 
 if __name__ == "__main__":
     HBNBCommand().cmdloop()
