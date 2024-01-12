@@ -32,12 +32,16 @@ class FileStorage:
                 loaded_objects = json.load(file)
 
             for key, value in loaded_objects.items():
-                 class_name = value['__class__']
-                 del value['__class__']
-                 obj = eval(class_name)(**value)
-                 self.__objects[key] = obj
+                class_name = value['__class__']
+                del value['__class__']
+                
+                # Use globals() to access the global scope
+                if class_name in globals():
+                    obj = globals()[class_name](**value)
+                    self.__objects[key] = obj
 
         except FileNotFoundError:
             pass
+
 
 storage = FileStorage()  # Move this line outside the class definition
