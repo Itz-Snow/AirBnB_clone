@@ -6,6 +6,12 @@ import cmd
 from models.base_model import BaseModel
 from models import storage
 from models.user import User  # Import the User class
+from models.place import Place
+from models.state import State
+from models.city import City
+from models.amenity import Amenity
+from models.review import Review
+
 
 class HBNBCommand(cmd.Cmd):
     prompt = "(hbnb) "
@@ -129,6 +135,7 @@ class HBNBCommand(cmd.Cmd):
 
         setattr(instance, attribute_name, attribute_value)
         instance.save()
+
 
 if __name__ == "__main__":
     HBNBCommand().cmdloop()
