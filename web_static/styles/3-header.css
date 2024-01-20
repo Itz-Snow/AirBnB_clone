@@ -1,0 +1,19 @@
+header {
+	background-color: white;
+	height: 70px;
+	width: 100%;
+	border-bottom: solid 1px #CCCCCC;
+}
+header div {
+	width: 100%;
+	height: 70px;
+}
+div[class="homeimg"] {
+	background-image: url("../images/homeimage.png");
+	background-repeat: no-repeat;
+	display: flex;
+	position: relative;
+	float: left;
+	align-items: center;
+	left: 20px;
+}

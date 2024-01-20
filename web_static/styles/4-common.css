@@ -1,0 +1,22 @@
+body {
+	margin: 0%;
+	padding: 0%;
+	color: #484848;
+	font-size: 14px;
+	font-family: Circular,"Helvetica Neue",Helvetica,Arial,sans-serif;
+	min-height: 100vh;
+/*	display: flex;*/
+/*	flex-direction: column;*/
+}
+
+div[class="container"] {
+	max-width: 1000px;
+	/* height: 30%; */
+	margin: auto;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	align-items: center;
+	border: solid #CCCCCC 1px;
+	position: relative;
+/*	display: flex;*/
+}
